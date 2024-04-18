@@ -1,0 +1,19 @@
+{% extends "user/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+ <a class="navbar-brand mr-4"   >{% load static %} <img src="{% static "user/media/NewLogo_3.png" %}" class="rounded float-left"  alt="logo" width=80px height=80px /></a>
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Audio Post</legend>
+                {{ form|crispy }}
+            </fieldset>
+
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Post</button>
+                <a>.wav, .mp3 files only</a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,22 @@
+#import nltk
+#nltk.download('stopwords')
+#nltk.download('wordnet')
+#nltk.download('omw-1.4')
+#pip install -U pip setuptools wheel
+#pip install -U spacy
+#python3 -m spacy download en_core_web_sm
+numpy
+scipy
+textblob
+pytextrank
+gensim
+tweepy==3.10.0
+nltk
+spacy
+pandas
+wordcloud
+pyLDAvis
+IPython
+django-crispy-forms
+django
+openpyxl
